@@ -93,6 +93,7 @@ h1 {
   color: #007bff;
   margin-bottom: 20px;
   animation: fadeIn 2s ease-in-out, bounce 2s infinite;
+  -webkit-animation: fadeIn 2s ease-in-out, bounce 2s infinite; /* Префикс для Safari */
   text-align: center;
 }
 
