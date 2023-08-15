@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+a:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.02);
+}
+
+.imessage-container {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  max-width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+  transition: max-height 0.5s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 2px solid #e0e0e0;
+  transition: background-color 0.3s;
+}
+
+
+.item1{
+  border-top: 2px solid #e0e0e0;
+}
+
+.chat-item:hover {
+  background-color: #f8f8f8;
+}
+
+.chat-avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.chat-avatar img:hover {
+  transform: scale(1.1);
+}
+
+.chat-info {
+  flex: 1;
+}
+
+.chat-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.message {
+  background-color: #e6f7ff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+@media (max-width: 500px) {
+  .imessage-container {
+      height: 100vh;
+  }
+}
