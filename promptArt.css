@@ -235,6 +235,53 @@ body {
 }
 
 
+input {
+  border: none; /* Убираем границу */
+  outline: none; /* Убираем подсветку при фокусе */
+}
+
+
+
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-theme body {
+  background-color: #111; /* Замените на желаемый цвет фона */
+}
+
+.dark-theme .imessage-container {
+  background-color: #222; /* Замените на желаемый цвет фона контейнера */
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2); /* Замените на желаемую тень */
+}
+
+.dark-theme .backBtn {
+  filter: invert(1); /* Инвертируем цвет иконок */
+}
+
+
+
+.dark-theme .themeBtn {
+  filter: invert(1); /* Инвертируем цвет иконок */
+}
+
+.dark-theme .themeBtn:hover {
+  filter: invert(0); /* Инвертируем цвет иконок */
+}
+
+.dark-theme #send-button{
+  background-color: white;
+  color: black;
+}
+
+.dark-theme #send-button:hover{
+  background-color: #007bff;
+  color: white;
+}
+
+
+
 
 @media (max-width: 500px) {
   .imessage-container {
