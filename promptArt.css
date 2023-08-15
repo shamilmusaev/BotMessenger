@@ -8,18 +8,20 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
   }
   
   .imessage-container {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    width: 700px;
+    max-width: 750px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 500px;
+    
   }
   
   .messages {
@@ -239,7 +241,7 @@ body {
       border-radius: 10px;
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
       width: 85%;
-      height: 600px;
+      height: 650px;
       padding: 20px;
       display: flex;
       flex-direction: column;
