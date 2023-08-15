@@ -90,7 +90,7 @@ async function query(data) {
         await new Promise(resolve => setTimeout(resolve, delay));
       }
   
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Задержка перед следующим сообщением
+      await new Promise(resolve => setTimeout(resolve, 1000)); 
     }
   
     for (const message of messages) {

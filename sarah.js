@@ -1,6 +1,6 @@
 async function query(data) {
-    const randomParam = Math.random(); // Генерируем случайный параметр
-    const modifiedData = { ...data, randomParam }; // Добавляем его к данным запроса
+    const randomParam = Math.random(); 
+    const modifiedData = { ...data, randomParam };
   
     const response = await fetch(
       "https://api-inference.huggingface.co/models/espnet/kan-bayashi_ljspeech_vits",
@@ -17,8 +17,8 @@ async function query(data) {
   }
   
   async function chat(data) {
-    const randomParam = Math.random(); // Генерируем случайный параметр
-    const modifiedData = { ...data, randomParam }; // Добавляем его к данным запроса
+    const randomParam = Math.random(); 
+    const modifiedData = { ...data, randomParam };
     const response = await fetch(
       "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill",
       {
@@ -86,11 +86,11 @@ async function query(data) {
       messagesContainer.removeChild(loadingIndicator);
   
       const audioElement = document.createElement("audio");
-      audioElement.controls = true; // Добавим элементы управления для воспроизведения
+      audioElement.controls = true; 
       audioElement.src = audioUrl;
       messagesContainer.appendChild(audioElement);
   
-      // Прокрутить контейнер к последнему элементу
+      
       messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
   });
@@ -117,7 +117,7 @@ async function query(data) {
         await new Promise(resolve => setTimeout(resolve, delay));
       }
   
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Задержка перед следующим сообщением
+      await new Promise(resolve => setTimeout(resolve, 1000)); 
     }
   
     for (const message of messages) {

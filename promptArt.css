@@ -35,9 +35,9 @@ body {
     border-radius: 10px;
     margin-bottom: 10px;
   
-    opacity: 0; /* Начальная прозрачность, чтобы скрыть сообщение */
-    transform: translateY(10px); /* Начальное положение для анимации */
-    animation: appearAnimation 1s forwards; /* Применяем анимацию при появлении */
+    opacity: 0; 
+    transform: translateY(10px); 
+    animation: appearAnimation 1s forwards; 
   }
   
   .appear {
@@ -228,9 +228,9 @@ body {
   }
   
   .imessage-header img {
-    width: 24px; /* Устанавливаем одинаковый размер для SVG иконок */
+    width: 24px; 
     height: 24px;
-    margin: 0 10px; /* Добавляем отступ между иконками и текстом */
+    margin: 0 10px; 
   }
   
   @media (max-width: 500px) {
